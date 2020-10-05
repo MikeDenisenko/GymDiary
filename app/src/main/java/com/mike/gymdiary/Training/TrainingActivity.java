@@ -1,6 +1,7 @@
 package com.mike.gymdiary.Training;
 
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,4 +14,14 @@ public class TrainingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_training);
     }
+public void onClick(View view){
+        Switch(view.getId()){
+            case R.id.createExBtnTraining{
+                break;
+            }
+            case R.id.saveBtnTraining{
+                
+            }
+    }
+}
 }

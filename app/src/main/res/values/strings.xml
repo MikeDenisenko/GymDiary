@@ -3,4 +3,5 @@
     <string name="create">Create training</string>
     <string name="start">Start training</string>
     <string name="schedule">Schedule</string>
+    <string name="save">Save</string>
 </resources>

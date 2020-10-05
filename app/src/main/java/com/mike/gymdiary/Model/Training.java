@@ -1,11 +1,12 @@
 package com.mike.gymdiary.Model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Training {
+public class Training implements Serializable {
     private String name = "";
 
-    private ArrayList<Exercise> exercises = new ArrayList<>();
+    private ArrayList<Exercise> exercises;
 
     public void exercisesOperation(){
        Exercise bP = new Exercise();
