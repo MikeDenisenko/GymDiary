@@ -9,13 +9,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.mike.gymdiary.Progress.StartTrainingActivity;
 import com.mike.gymdiary.Schedule.ScheduleActivity;
 import com.mike.gymdiary.Training.TrainingActivity;
+import com.mike.gymdiary.Utility.DataUtility;
 
 public class MainActivity extends AppCompatActivity {
+
+    DataUtility dataUtility = new DataUtility();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        dataUtility.initFiles(this);
 
     }
 

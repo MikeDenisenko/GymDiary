@@ -10,8 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Progress.StartTraining"></activity>
-        <activity android:name=".Training.EditExercises" />
-        <activity android:name=".Training.EditTrainings" />
+        <activity android:name=".Training.EditExercisesActivity" />
+        <activity android:name=".Training.EditTrainingsActivity" />
         <activity android:name=".Training.TrainingActivity" />
         <activity android:name=".Schedule.ScheduleActivity" />
         <activity android:name=".MainActivity">

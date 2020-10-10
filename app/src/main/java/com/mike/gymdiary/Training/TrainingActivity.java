@@ -1,5 +1,6 @@
 package com.mike.gymdiary.Training;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -15,12 +16,16 @@ public class TrainingActivity extends AppCompatActivity {
         setContentView(R.layout.activity_training);
     }
 public void onClick(View view){
-        Switch(view.getId()){
-            case R.id.createExBtnTraining{
+        switch(view.getId()){
+            case R.id.createExBtnTraining:{
+                Intent intent = new Intent (this, EditExercisesActivity.class);
+                startActivity(intent);
                 break;
             }
-            case R.id.saveBtnTraining{
-                
+
+            case R.id.saveBtnTraining:{
+                finish();
+                break;
             }
     }
 }

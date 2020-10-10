@@ -6,11 +6,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.mike.gymdiary.R;
 
-public class EditExercises extends AppCompatActivity {
+public class EditTrainingsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_exercises);
+        setContentView(R.layout.activity_edit_trainings);
     }
 }
