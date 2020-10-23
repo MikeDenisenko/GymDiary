@@ -1,6 +1,11 @@
 package com.mike.gymdiary.Model;
 
-public class Exercise {
+import android.graphics.Bitmap;
+
+import java.io.Serializable;
+
+public class Exercise implements Serializable {
+
 
     private String name = "";
     private String imagelink = "";
@@ -8,6 +13,17 @@ public class Exercise {
     private int sets = 0;
     private int repetitions = 0;
     private boolean isDone = false;
+    private Bitmap bm;
+
+    public Bitmap getBm() {
+        return bm;
+    }
+
+    public void setBm(Bitmap bm) {
+        this.bm = bm;
+    }
+
+
 
     public boolean isDone() { return isDone; }
 

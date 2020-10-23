@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.mike.gymdiary.Progress.StartTrainingActivity;
 import com.mike.gymdiary.Schedule.ScheduleActivity;
-import com.mike.gymdiary.Training.TrainingActivity;
+import com.mike.gymdiary.Training.EditTrainingsActivity;
 import com.mike.gymdiary.Utility.DataUtility;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     public void onClick (View view){
         switch (view.getId()){
             case R.id.createBtnMain: {
-                Intent intent = new Intent(this, TrainingActivity.class);
+                Intent intent = new Intent(this, EditTrainingsActivity.class);
                 startActivity (intent);
                 break;
             }

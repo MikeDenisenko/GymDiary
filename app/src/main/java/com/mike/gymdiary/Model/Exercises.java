@@ -6,7 +6,17 @@ import java.util.Map;
 
 public class Exercises implements Serializable {
 
-    private Map<String, Exercise> ex = new HashMap<>();
+    private String current = "";
+
+    public Map<String, Exercise> ex = new HashMap<String, Exercise>();
+
+    public String getCurrent() {
+        return current;
+    }
+
+    public void setCurrent(String current) {
+        this.current = current;
+    }
 
     public Map<String, Exercise> getEx() {
         return ex;

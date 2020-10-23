@@ -15,6 +15,7 @@ public class TrainingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_training);
     }
+
 public void onClick(View view){
         switch(view.getId()){
             case R.id.createExBtnTraining:{

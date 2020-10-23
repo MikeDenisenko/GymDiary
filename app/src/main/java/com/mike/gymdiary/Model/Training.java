@@ -1,33 +1,27 @@
 package com.mike.gymdiary.Model;
 
 import java.io.Serializable;
-import java.util.ArrayList;
 
 public class Training implements Serializable {
-    private String name = "";
 
-    private ArrayList<Exercise> exercises;
+    private String title = "";
 
-    public void exercisesOperation(){
-       Exercise bP = new Exercise();
-       bP.setName("Bench Press");
-        exercises.add(bP);
-        System.out.println (exercises.get(0).getName());
+    private Exercises exercises = new Exercises();
+
+    public String getName() {
+        return title;
     }
 
-    public ArrayList<Exercise> getExercises() {
+    public void setName(String title) {
+        this.title = title;
+    }
+
+    public Exercises getExercises() {
         return exercises;
     }
 
-    public void setExercises(ArrayList<Exercise> exercises) {
+    public void setExercises(Exercises exercises) {
         this.exercises = exercises;
     }
-
-
-
-    public Exercise getExercise(int number){
-        return exercises.get(number);
-    }
-
 }
 

@@ -8,4 +8,8 @@ public class Trainings implements Serializable {
 
    private Map <String, Training> trainings = new HashMap<>();
 
+   public void addNewTraining(){
+
+   }
+
 }

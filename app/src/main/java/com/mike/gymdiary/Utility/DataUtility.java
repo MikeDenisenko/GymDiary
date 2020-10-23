@@ -50,7 +50,7 @@ public class DataUtility {
 
         } catch (
                 Exception ex) {
-            System.out.println(ex.toString());
+            System.out.println("DataUtility initialisation:" + ex.getMessage());
         }
     }
 
@@ -68,7 +68,9 @@ public class DataUtility {
         oos.writeObject(exercises);
         oos.flush();
         oos.close();
+          System.out.println("DataUtility Serialize:Done");
     }catch(Exception ex){
+          System.out.println("DataUtility Serialize:" + ex.getMessage());
     }
     }
 
@@ -79,8 +81,10 @@ public class DataUtility {
           oos.writeObject(trainings);
           oos.flush();
           oos.close();
+          System.out.println("DataUtility Serialize:Done");
 
       }catch(Exception ex){
+          System.out.println("DataUtility Serialize:" + ex.getMessage());
       }
     }
 
@@ -89,10 +93,12 @@ public class DataUtility {
             FileInputStream fis = new FileInputStream(file);
             ObjectInputStream ois = new ObjectInputStream(fis);
             Exercises ex = (Exercises) ois.readObject();
+            System.out.println("DataUtility DeSerialize:Done");
             return ex;
 
         } catch (Exception ex) {
             Exercises error = new Exercises();
+            System.out.println("DataUtility DeSerialize:" + ex.getMessage());
             return exercises;
         }
     }
@@ -102,10 +108,13 @@ public class DataUtility {
         FileInputStream fis = new FileInputStream(file);
         ObjectInputStream ois = new ObjectInputStream(fis);
         Trainings tr = (Trainings) ois.readObject();
+            System.out.println("DataUtility DeSerialize:Done");
         return tr;
 
     }catch(Exception ex) {
+
         Trainings error = new Trainings();
+            System.out.println("DataUtility DeSerialize:" + ex.getMessage());
         return trainings;
     }
 }
@@ -120,6 +129,7 @@ public void resetTrainings(Trainings trainings, File file) {
         oos.close();
 
        }catch(Exception ex){
+           System.out.println("DataUtility Serialize");
         }
 }
 public void resetExercises(Exercises exercises, File file) {
@@ -132,6 +142,7 @@ public void resetExercises(Exercises exercises, File file) {
         oos.close();
 
         }catch(Exception ex){
+         System.out.println("DataUtility Serialize");
         }
 }
 
